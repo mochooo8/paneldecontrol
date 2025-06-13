@@ -1,0 +1,48 @@
+/* Importamos una fuente bonita */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f00b0b;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background-color: #240bfd;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+h1 { color: #03730c; }
+.card {
+    background-color: #f0f8f8;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+}
+.moisture-display { /* Renamed for clarity, but styles apply to both humidity and temp displays */
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #036609;
+}
+.unit {
+    font-size: 2rem;
+    vertical-align: super;
+    margin-left: 5px;
+}
+.status-indicator {
+    height: 15px;
+    border-radius: 7px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ccc;
+    transition: background-color 0.5s ease;
+}
+.status-indicator.dry { background-color: #4c0505; }
+.status-indicator.normal { background-color: #f2b809; }
+.status-indicator.wet { background-color: #035c07; }
